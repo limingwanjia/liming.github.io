@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#game {
+    display: grid;
+    grid-template-columns: repeat(10, 50px); /* 调整为 5 列 */
+    grid-template-rows: repeat(10, 50px); /* 调整为 5 行 */
+    gap: 2px;
+    background-color: #333;
+    position: relative;
+}
+
+.tile {
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+.player {
+    background-image: url('Q03.png');
+    background-size: cover;
+}
+
+.box {
+    background-image: url('box.png');
+    background-size: cover;
+}
+
+.victory {
+    background-color: gold; /* 胜利位置的背景颜色 */
+}
+
+#victory-screen {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
